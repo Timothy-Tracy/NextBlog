@@ -1,5 +1,5 @@
 ---
-title: 'Sorting Algorithm Visualizer'
+title: 'Sorting Algorithm Visualizer - Java GUI App'
 status: 'published'
 author:
   name: 'Timothy Tracy '
@@ -13,5 +13,7 @@ link: 'https://github.com/Timothy-Tracy/Sorting-Algorithm-Visualizer'
 publishedAt: '2023-09-29T18:38:58.465Z'
 ---
 
-Blog with SSG built with NextJs 13, Contentlayer, Giscus, NextAuth. It uses Github API for admin section that allows managing markdown files rendered with Codemirror.
+GUI Java program that visualizes sorting algorithms working on items of various height
+Implemented object oriented programming, multi threading and asynchronous code
+
 

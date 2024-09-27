@@ -7,13 +7,13 @@ import { AboutMe } from "app/components/about-me";
 import { IntroLinks } from "app/components/intro-links";
 
 export const metadata = {
-  title: 'Alex Pavlov - blog',
-  description: 'Alex Pavlov - blog about programming',
+  title: 'Timothy Tracy - Blog',
+  description: 'Timothy Tracy - blog about programming',
   languages: {
     'en-US': '/en-US',
   },
-  keywords: ['Alex Pavlov', 'Blog', '.NET', 'C#', 'JavaScript'],
-  creator: 'Alex Pavlov',
+  keywords: ['Timothy Tracy', 'Blog', '.NET', 'C#', 'JavaScript'],
+  creator: 'Timothy Tracy',
   category: 'technology'
 }
 
