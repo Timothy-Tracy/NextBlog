@@ -22,7 +22,7 @@ export function Header({navLinks} : {navLinks: {href: string, title: string}[]})
             <a>
             <Typewriter
               options={{
-                strings: [`~${pathname} `],
+                strings: [`timothytracy.dev${pathname} `],
                 autoStart: true,
                 loop: false,
                 deleteSpeed: 100000,
