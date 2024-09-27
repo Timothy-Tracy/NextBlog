@@ -1,6 +1,8 @@
 'use client';
 import { RoughNotation } from 'react-rough-notation';
 import { allPages, Page } from "contentlayer/generated";
+import { SpotlightButton } from './spotlight-button/SpotlightButton';
+import { Hero } from './Hero';
 
 export function AboutMe() {
     "use client";
@@ -10,10 +12,8 @@ export function AboutMe() {
 
     return (
       <div className="pt-6">
-        <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          Hi, I'm{' '}
-          <span className="text-primary-color-500 dark:text-primary-color-dark-500">Timothy Tracy</span>
-        </h1>
+        
+        <Hero></Hero>
         <p className="pt-5 text-lg text-gray-600 dark:text-gray-300">
           {aboutMe}
         </p>
@@ -31,6 +31,9 @@ export function AboutMe() {
           </RoughNotation>
           in between. Have a good read!{' '}
         </p>
+        <SpotlightButton>
+          button
+        </SpotlightButton>
       </div>
     );
   }

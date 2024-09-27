@@ -1,0 +1,78 @@
+/* From Uiverse.io by Navarog21, modified for Tailwind theme compatibility and responsiveness */
+.spotlight-button {
+  position: relative;
+  border: 3px ridge #149CEA;
+  outline: none;
+  background-color: transparent;
+  color: hsl(var(--foreground));
+  transition: 1s;
+  border-radius: 0.3em;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* Base size (mobile first) */
+  width: 8em;
+  height: 3em;
+  font-size: 14px;
+
+  /* Small screens */
+  @media (min-width: 640px) {
+    width: 9em;
+    height: 3.25em;
+    font-size: 15px;
+  }
+
+  /* Medium screens */
+  @media (min-width: 768px) {
+    width: 10em;
+    height: 3.5em;
+    font-size: 16px;
+  }
+
+  /* Large screens
+  @media (min-width: 1024px) {
+    width: 11em;
+    height: 3.75em;
+    font-size: 17px;
+  }
+
+  /* Extra Large screens 
+  @media (min-width: 1280px) {
+    width: 12em;
+    height: 4em;
+    font-size: 18px;
+  } */
+}
+
+.spotlight-button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: hsl(var(--background));
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.spotlight-button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: hsl(var(--background));
+  transition: 0.5s;
+}
+
+.spotlight-button:hover::before,
+.spotlight-button:hover::after {
+  transform: scale(0)
+}
+
+.spotlight-button:hover {
+  box-shadow: inset 0px 0px 25px #1479EA;
+}

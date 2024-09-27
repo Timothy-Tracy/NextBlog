@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <section className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
         <AboutMe />
-        <IntroLinks />
+        {/* <IntroLinks /> */}
       </section>
       <section>
         <h2 className="flex pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
