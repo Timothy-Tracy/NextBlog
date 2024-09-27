@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const urls = allPosts.map(p => {
         return {
-            url: `https://alexpavlov.dev/${p.url}`,
+            url: `${process.env.BASEURL}/${p.url}`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).concat(
         allPages.map(p => {
             return {
-                url: `https://alexpavlov.dev/${p._raw.flattenedPath}`,
+                url: `${process.env.BASEURL}/${p._raw.flattenedPath}`,
                 lastModified: new Date(),
                 changeFrequency: 'monthly',
                 priority: 1,
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     )).concat(
         [
             {
-                url: `https://alexpavlov.dev/blog`,
+                url: `${process.env.BASEURL}/blog`,
                 lastModified: new Date(),
                 changeFrequency: 'monthly',
                 priority: 1,
