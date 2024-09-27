@@ -9,14 +9,14 @@ export async function upsertPost(slug: string, post: string, sha?: string) {
     let buff = Buffer.from(post);
     let base64data = buff.toString('base64')
 
-    var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/content/posts/${slug}`, {
-        owner: 'pavlovtech',
+    var resp = await octokit.request(`PUT /repos/timothy-tracy/nextblog/contents/content/posts/${slug}`, {
+        owner: 'timothy-tracy',
         repo: 'NextBlog',
         path: './posts',
         message: 'my commit message',
         committer: {
-          name: 'Alex Pavlov',
-          email: 'alexpppavlov93@gmail.com'
+          name: 'Timothy Tracy',
+          email: 'timothydtracy@gmail.com'
         },
         content: base64data,
         headers: {
@@ -35,14 +35,14 @@ export async function uploadFile(file: File) {
 
   const octokit = new Octokit({ auth: githubToken });
 
-  var resp = await octokit.request(`PUT /repos/pavlovtech/nextblog/contents/public/images/${file.name}`, {
-      owner: 'pavlovtech',
+  var resp = await octokit.request(`PUT /repos/timothy-tracy/nextblog/contents/public/images/${file.name}`, {
+      owner: 'timothy-tracy',
       repo: 'NextBlog',
       path: './public/assets',
       message: 'added image',
       committer: {
-        name: 'Alex Pavlov',
-        email: 'alexpppavlov93@gmail.com'
+        name: 'Timothy Tracy',
+        email: 'timothydtracy@gmail.com'
       },
       content: base64data,
       headers: {
@@ -55,8 +55,8 @@ export async function uploadFile(file: File) {
 
 export async function getAllPosts() {
     const octokit = new Octokit({ auth: githubToken });
-    var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/content/posts`, {
-        owner: 'pavlovtech',
+    var resp = await octokit.request(`GET /repos/timothy-tracy/nextblog/contents/content/posts`, {
+        owner: 'timothy-tracy',
         repo: 'NextBlog',
         path: 'posts',
         headers: {
@@ -69,8 +69,8 @@ export async function getAllPosts() {
 
 export async function getPost(fileName: string) {
   const octokit = new Octokit({ auth: githubToken });
-  var resp = await octokit.request(`GET /repos/pavlovtech/nextblog/contents/content/posts/${fileName}`, {
-      owner: 'pavlovtech',
+  var resp = await octokit.request(`GET /repos/timothy-tracy/nextblog/contents/content/posts/${fileName}`, {
+      owner: 'timothy-tracy',
       repo: 'NextBlog',
       path: 'posts',
       headers: {
@@ -91,14 +91,14 @@ export async function getPost(fileName: string) {
 
 export async function deletePost(fileName: string, sha: string) {
   const octokit = new Octokit({ auth: githubToken });
-  var resp = await octokit.request(`DELETE /repos/pavlovtech/nextblog/contents/content/posts/${fileName}`, {
-    owner: 'pavlovtech',
+  var resp = await octokit.request(`DELETE /repos/timothy-tracy/nextblog/contents/content/posts/${fileName}`, {
+    owner: 'timothy-tracy',
     repo: 'NextBlog',
     path: './posts',
     message: 'my commit message',
     committer: {
-      name: 'Alex Pavlov',
-      email: 'alexpppavlov93@gmail.com'
+      name: 'Timothy Tracy',
+      email: 'timothydtracy@gmail.com'
     },
     headers: {
       'X-GitHub-Api-Version': '2022-11-28'

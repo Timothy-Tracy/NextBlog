@@ -3,13 +3,13 @@ import Card from "app/components/project-card";
 import Link from "next/link";
 
 export const metadata = {
-    title: 'Alex Pavlov - blog',
-    description: 'Alex Pavlov - projects',
+    title: 'Timothy Tracy - blog',
+    description: 'Timothy Tracy - projects',
     languages: {
       'en-US': '/en-US',
     },
-    keywords: ['Alex Pavlov', 'Projects', '.NET', 'C#', 'JavaScript'],
-    creator: 'Alex Pavlov',
+    keywords: ['Timothy Tracy', 'Projects', '.NET', 'C#', 'JavaScript'],
+    creator: 'Timothy Tracy',
 }
 
 export default function Projects() {

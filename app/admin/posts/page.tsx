@@ -28,7 +28,7 @@ const Admin = async () => {
 
     return {
       ...githubPost,
-      date: generatedPost.publishedAt,
+      date: generatedPost?.publishedAt || 'null',
       status: generatedPost ? 'published' : 'publising',
     }
   })

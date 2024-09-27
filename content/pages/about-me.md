@@ -2,7 +2,7 @@
 title: 'About Me'
 status: 'published'
 author:
-  name: 'Alex Pavlov '
+  name: 'Timothy Tracy'
   picture: 'https://avatars.githubusercontent.com/u/6662454?v=4'
 slug: 'about-me'
 description: ''

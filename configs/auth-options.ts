@@ -29,7 +29,7 @@ export const authOptions: NextAuthOptions = {
 
         return {
           id: "admin",
-          name: "Alex",
+          name: "Tim",
           email: process.env.ADMIN_EMAIL
         };
       },
